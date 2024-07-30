@@ -1,685 +1,853 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/newcss.css" />
+    <link rel="icon" href="assets\img\icon2.jpg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
 
-<head>
-	<title>My Portfolio</title>
-	<link rel="icon" href="images/icon2.jpg" type="image/x-icon">
+  <body oncontextmenu="return false">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Muhammad Sarim Khan</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Contact-Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-	<!-- Meta tag Keywords -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<!-- <meta name="keywords" content="" /> -->
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main-->
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!-- //Meta tag Keywords -->
+    <main class="main">
+      <!--========================= Home =====================-->
 
-	<!-- Custom-Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Bootstrap-Core-CSS -->
-	<link rel="stylesheet" href="css/animation-aos.css">
-	<link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
-	<!-- animation css -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/muhammad-sarim-khan-661211238/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt home__icon"></i>
+              </a>
 
-	<!-- Style-CSS -->
-	<link rel="stylesheet" href="css/all.min.css">
-	<!-- Font-Awesome-Icons-CSS -->
-	<!-- //Custom-Files -->
+              <a
+                href="https://github.com/isarimkhan?tab=repositories"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt home__icon"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                      130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                      97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                      165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                      129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="-79"
+                    y="-46"
+                    xlink:href="assets/img/profile.jpeg"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm  Muhammad Sarim Khan</h1>
+              <h3 class="home__subtitle">
+                Computer Science Student
+              </h3>
+              <p class="home__description">
+                An undergraduate engineering student at
+                <strong>Sindh Madressatul Islam University </strong>, Karachi.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
 
-	<!-- Web-Fonts -->
-	<link
-		href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext"
-		rel="stylesheet">
-	<link
-		href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-		rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
-	<!-- //Web-Fonts -->
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-</head>
+      <!--======================= About========================-->
 
-<body>
-	<div class="mian-content">
-		<!-- header -->
-		<header data-aos="fade-down">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="logo text-left">
-					<h1>
-						<a class="navbar-brand" href="index.html"> Portfolio </a>
-					</h1>
-				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon">
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
 
-					</span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-lg-auto text-lg-right text-center">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link scroll" href="#about">About Me</a>
-						</li>
+        <div class="about__container container grid">
+          <img src="assets\img\me.jpeg" alt="" class="about__img" />
 
-						<li class="nav-item">
-							<a class="nav-link scroll" href="#services">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link scroll" href="#education" title=""> Education</a>
-						</li>
+          <div class="about__data">
+            <p class="about__description">
+              I'm a CS undergraduate, passionate about technology and an avid reader. I have a self-motivated and can-do attitude, thriving in challenging and dynamic environments. Seeking a competitive position to enhance my skills and contribute to a professional organization. I'm very much passionate to learn new stuff that interests me and can help me to get better.
+            </p>
 
-						<li class="nav-item">
-							<a class="nav-link scroll" href="#projects">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact Me</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<!-- //header -->
+            <!-- <div class="about__info">
+              <div>
+                <span class="about__info-title">08.30+</span>
+                <span class="about__info-name">Aggregate <br />CGPA</span>
+              </div>
 
-		<!--  particles  -->
-		<div id="particles-js"></div>
-		<!-- //particles -->
+              <div>
+                <span class="about__info-title">04+</span>
+                <span class="about__info-name"
+                  >
+                  Projects</span
+                >
+              </div>
 
-		<!-- banner -->
-		<div class="banner-text">
-			<div class="effect-text-w3ls">
-				<div class="container">
-					<h2>Professional Web Developer / Desktop Developer</h2>
-					<span class="mytext1 uppercase mt-2">Hello My Name is </span>
-					<span class="mytext2"> Muhammad Sarim Khan </span>
-					<p class="para-style text-light 	mt-xl-4 mt-3">
-						I'm a Muhammad Srim Khan Website Developer and webdesigner creating awesome and
-						effective visual identities for companies of all sizes around the globe. Let's start scrolling
-						and learn more about me.
-					</p>
-					<div class="button-w3ls" data-aos="fade-up">
-						<a href="#" class="btn btn-sm animated-button thar-four mr-3"> Resume <i
-								class="fas fa-download"></i></a>
-						<a href="contact.html" class="btn btn-sm animated-button thar-four">Hire Me</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- //banner -->
-	</div>
-	<!-- //main -->
+              <div>
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">Months <br />experience</span>
+              </div>
+            </div> -->
 
-	<!-- banner bottom -->
-	<section class="bottom-banner-w3layouts py-5" id="about">
-		<div class="container py-xl-5 py-lg-3">
-			<div class="row py-xl-3 py-lg-3">
-				<div class="col-lg-6 feature fea-slider" data-aos="fade-right">
-					<img src="images/me.jpeg" style="height: 426px; width: 440px; " class="img-fluid" alt="">
-				</div>
-				<div class="col-lg-6 feature pl-lg-5 mt-lg-0 mt-5" data-aos="fade-left">
-					<h3 class="title-wthree text-dark mb-4">
-						<span class="mb-2">Some Info</span>About Me
-					</h3>
-					<p class="mt-3">Hey! Sarim here, we Built quality websites with HTML, CSS, Java, wordpress and
-						JavaScript.
-						facebook ads and SEO to rank website website.
-						Award-winning web developer and instructor with 1+ years’ of well-rounded experience in
-						development.
+            <div class="about__buttons">
+              <a download="" href="assets\sarim.pdf" class="button button--flex">
+                Download CV<i class="fas fa-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-					</p>
+      <!--===================== SKILLS =====================-->
 
-					<div class="button-w3ls">
-						<a href="images/sarim.pdf" class="btn btn-sm animated-button thar-four">Download <i
-								class="fas fa-download"></i></a>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- //banner bottom -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
 
-	<!-- services -->
-	<div class="why-choose-agile py-5" id="services">
-		<div class="container py-xl-5 py-lg-3">
-			<!-- heading title -->
-			<div class="mb-lg-5 mb-4 text-center">
-				<h3 class="title-wthree text-white mb-2">
-					<span class="text-dark mb-2">My Works</span>Excellent Services
-				</h3>
-				<p class="sub-tittle">Knowledgeable at creating successful websites that meet
-					customer needs. Specializing in collaborating with US customers to gather requirements.</p>
-			</div>
-			<!-- //heading title -->
-			<div class="row agileits-w3layouts-grid pt-md-4">
-				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fab fa-affiliatetheme"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">Web Developer</h4>
-							<p>Knowledgeable Back end  Developer adept at creating successful websites that meet
-								customer needs. Specializing in collaborating with US customers to gather requirements,
-								produce plans and improve designs for usability and functionality. Fully proficient in
-								HTML, CSS and javascript and bootstrap .
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== Skill 1 =================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="fas fa-pencil-ruler skills__icon"></i>
 
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fab fa-accusoft"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9  agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">Desktop Developer </h4>
-							<p>
-								Hi, I have 1-year of experience in Desktop Developer. Dear, Do you make desktop application for easy your work contact with me. I make your desktop application
-								to your requirements. sarim note I only give you a placeholder
-								budget and timeframe.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-					
-					
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fab fa-forumbee"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">SEO </h4>
-							<p>Hey! Sarim here
-								I do complete S.E.O for most types of sites that will provide long-term benefits by
-								ensuring the site gives
-								the search engines what they want, giving you the results you want for the past three
-								years.
-								So you can understand better that for best results .
+                <div>
+                  <h1 class="skills__title">Programming Languages</h1>
+                </div>
 
-								Thank You,
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              
 
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-<!--			<div class="row agileits-w3layouts-grid my-lg-4">-->
-<!--				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">-->
-<!--					<div class="row wthree_agile_us py-md-4 py-3">-->
-<!--						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">-->
-<!--							<div class="wthree_features_grid text-center py-3">-->
-<!--								<i class="fab fa-audible"></i>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">-->
-<!--							<h4 class="text-white font-weight-bold mb-3">Social Media Marketing </h4>-->
-<!--							<p>My goal is to help my clients achieve their goals and take their business to the next-->
-<!--								level through social media marketing. Your profiles online should be easy to find,-->
-<!--								impressive and powerful!</p>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-				<!-- <div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fab fa-asymmetrik"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">UX Design</h4>
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fas fa-gamepad"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">Game Apps</h4>
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row agileits-w3layouts-grid">
-				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fas fa-spinner"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">Social Media</h4>
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fab fa-xbox"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">Web Develop</h4>
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 services-agile-1" data-aos="zoom-in-up">
-					<div class="row wthree_agile_us py-md-4 py-3">
-						<div class="col-lg-3 col-sm-2 col-3 pr-lg-2">
-							<div class="wthree_features_grid text-center py-3">
-								<i class="fab fa-blackberry"></i>
-							</div>
-						</div>
-						<div class="col-lg-9 col-sm-10 col-9 agile-why-text">
-							<h4 class="text-white font-weight-bold mb-3">Web Apps</h4>
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-						</div>
-					</div>
-				</div> -->
-			</div>
-		</div>
-	</div>
-	<!-- //services -->
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">C</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">C++</h3>
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Java</h3>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Html</h3>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">CSS</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">JavaScript</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Python</h3>
+                    </div>
+                   
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">TypeScript</h3>
+                    </div>
+                </div>
+                
+                
+              </div>
+            </div>
 
-	<!-- skills -->
-	<div class="graph py-5" id="skills">
+            <!--==================== Skill 2 =================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-code skills__icon"></i>
 
-	</div>
-	<!-- //skills -->
+                <div>
+                  <h1 class="skills__title">IT Constructs</h1>
+                </div>
 
-	<!-- education -->
-	<div class="info-w3layouts" id="education">
-		<div class="w3l-overlay py-5">
-			<div class="container py-xl-5 py-lg-3">
-				<div class="edu-agile-info">
-					<div class="row">
-						<div class="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
-							<div class="grid-flex bg-white p-5">
-								<div class="pl-4 title-edu py-2 mb-5">
-									<i class="fas fa-book-reader mb-2"></i>
-									<h4 class="aboutbtm-head">My Education</h4>
-								</div>
-								<div class="grids-agiles-one">
-									<h5 class="text-dark mb-2">Bachlor Computer Science</h5>
-									<p>SMIU Karachi ,Pakistan</p>
-								</div>
-								<div class="grids-agiles-one my-3">
-									<h5 class="text-dark mb-2">HSC Pre-engineering</h5>
-									<p>Sindh Muslim Science  Colleges karachi.</p>
-								</div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
 
-								<div class="style-book-wthree">
-									<i class="fas fa-book-open"></i>
-								</div>
-							</div>
-						</div>
-						<!-- <div class="col-lg-6 mt-lg-0 mt-5" data-aos="fade-up" data-aos-duration="3000">
-							<div class="grid-flex bg-white p-5">
-								<div class="pl-4 title-edu py-2 mb-5">
-									<i class="fas fa-chalkboard-teacher mb-2"></i>
-									<h4 class="aboutbtm-head">My Experience</h4>
-								</div>
-								<div class="grids-agiles-one">
-									<h5 class="text-dark mb-2">Work in company "Available"</h5>
-									<p></p>
-								</div>
-								<div class="grids-agiles-one my-3">
-									<h5 class="text-dark mb-2">Work in company "Generators"</h5>
-								
-								</div>
-								<div class="grids-agiles-one">
-									<h5 class="text-dark mb-2">Course designer - San Diego</h5>
-									
-								</div>
-								<div class="style-book-wthree">
-									<i class="fas fa-edit"></i>
-								</div>
-							</div>
-						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //education -->
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">DBMS</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">DS & Algorithms</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">OOP</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">OS</h3>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Block Chain</h3>
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">AI</h3>
+                    </div>
+                      
+                </div>
+              </div>
+              
+                </div>
+                
+              </div>
+            </div>
+          </div>
 
-	<!-- clients -->
-	<!-- <div class="testimonials py-5" id="clients">
-		<div class="container py-xl-5 py-lg-3">
-		 //heading title 
-			<div class="mb-sm-5 mb-4 text-center">
-				<h3 class="title-wthree text-dark mb-2">
-					<span class="mb-2">Reviews</span>My Clients
-				</h3>
-				<p class="sub-tittle-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			 //heading title 
-			<div class="row">
-				<div class="col-lg-6 w3_testimonials_grids">
-					<section class="slider">
-						<div class="flexslider">
-							<ul class="slides">
-								<li>
-									<div class="w3_testimonials_grid px-xl-5 px-4 mt-xl-4 mx-auto">
-										<h4 class="text-dark text-center font-weight-light">
-											<i class="fas fa-quote-left mr-3"></i>Nam libero tempore, cum soluta nobis
-											est eligendi optio cumque nihil
-											impedit quo minus id quod possimus,
-											omnis voluptas<i class="fas fa-quote-right ml-3"></i>
-										</h4>
-										<div class="row mt-5">
-											<div class="col-6 test-agiles text-right">
-												<img src="images/te1.jpg" alt=" " class="img-fluid rounded-circle" />
-											</div>
-											<div class="col-6 right-text-agiles text-left mt-4">
-												<h5 class="font-weight-bold">John Frank</h5>
-												<p class="mt-2">Tempore Quo</p>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="w3_testimonials_grid px-xl-5 px-4 mt-xl-4 mx-auto">
-										<h4 class="text-dark text-center font-weight-light">
-											<i class="fas fa-quote-left mr-3"></i>Nam libero tempore, cum soluta nobis
-											est eligendi optio cumque nihil
-											impedit quo minus id quod possimus,
-											omnis voluptas<i class="fas fa-quote-right ml-3"></i>
-										</h4>
-										<div class="row mt-5">
-											<div class="col-6 test-agiles text-right">
-												<img src="images/te2.jpg" alt=" " class="img-fluid rounded-circle" />
-											</div>
-											<div class="col-6 right-text-agiles text-left mt-4">
-												<h5 class="font-weight-bold">Michael Doe</h5>
-												<p class="mt-2">Maxime Omni</p>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="w3_testimonials_grid px-xl-5 px-4 mt-xl-4 mx-auto">
-										<h4 class="text-dark text-center font-weight-light">
-											<i class="fas fa-quote-left mr-3"></i>Nam libero tempore, cum soluta nobis
-											est eligendi optio cumque nihil
-											impedit quo minus id quod possimus,
-											omnis voluptas<i class="fas fa-quote-right ml-3"></i>
-										</h4>
-										<div class="row mt-5">
-											<div class="col-6 test-agiles text-right">
-												<img src="images/te3.jpg" alt=" " class="img-fluid rounded-circle" />
-											</div>
-											<div class="col-6 right-text-agiles text-left mt-4">
-												<h5 class="font-weight-bold">Thomas Carl</h5>
-												<p class="mt-2">Placeat Quo</p>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</section>
-				</div>
-				<div class="col-lg-6 video-w3ls mt-lg-0 mt-sm-5 mt-4" data-aos="zoom-in-left">
-					<img src="images/testi.jpg" alt="" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!-- //clients -->
+          <div>
+            <!--==================== Skill 3 =================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-swatchbook skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Technologies</h1>
+                </div>
 
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
 
-	<!-- //facts -->
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Git</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">My Sql</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">NextJs</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name"></h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name"></h3>
+                  </div>
+                  
+                </div>
+                
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name"></h3>
+                  </div>
+                  
+                
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<!-- projects -->
-	<div class="gallery py-5" id="projects">
-		<div class="container py-xl-5 py-lg-3">
-			<!-- heading title -->
-			<div class="mb-lg-5 mb-4 text-center">
-				<h3 class="title-wthree text-dark mb-2">
-					<span class="mb-2">Gallery</span>My Projests
-				</h3>
-				<p class="sub-tittle-2">A Few Of My Latest Projects.</p>
-			</div>
-			<!-- //heading title -->
-			<div class="gallery-grids">
-				<section>
-					<ul id="da-thumbs" class="da-thumbs">
-						<li data-aos="zoom-in">
-							<a href="http://onlinedoctor.pk/" class="b-link-stripe b-animate-go  thickbox">
-								<img src="images/onlinedoctor.png" alt="" class="img-fluid" />
-								<div>
-								
-								
-								</div>
-							</a>
-						</li>
-						<li data-aos="zoom-in">
-							<a href="https://marketingtectics.com/" class="b-link-stripe b-animate-go  thickbox">
-								<img src="images/marketing.png" alt="" class="img-fluid" />
-								<div>
-									
-								</div>
-							</a>
-						</li>
-						<li data-aos="zoom-in">
-							<a href="https://gotopetsshop.com/" class="b-link-stripe b-animate-go  thickbox">
-								<img src="images/portfilo.png" alt="" class="img-fluid" />
-								<div>
-								
-								</div>
-							</a>
-						</li>
-						<li data-aos="zoom-in">
-							<a href="https://gotopetsshop.com/" class="b-link-stripe b-animate-go  thickbox">
-								<img src="images/supermarket.png" alt="" class="img-fluid" />
-								<div>
-								
-								</div>
-							</a>
-						</li>
-						<li data-aos="zoom-in">
-							<a href="https://gotopetsshop.com/" class="b-link-stripe b-animate-go  thickbox">
-								<img src="images/pizza.jpg" alt="" class="img-fluid" />
-								<div>
-								
-								</div>
-							</a>
-						</li>
-						<li data-aos="zoom-in">
-							<a href="https://gotopetsshop.com/" class="b-link-stripe b-animate-go  thickbox">
-								<img src="images/school.jpg" alt="" class="img-fluid" />
-								<div>
-								
-								</div>
-							</a>
-						</li>
-						
-					</ul>
-				</section>
-			</div>
-		</div>
-	</div>
-	<!--//gallery-->
+      <!--==================== Qualifications ==================-->
 
+      <section
+        class="qualification__section service__section"
+        id="qualification"
+      >
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
 
+        <div
+          class="qualification__container container grid services__container"
+        >
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+          </div>
 
-	<!-- footer -->
-	<footer>
-		<div class="w3ls-footer-grids py-4">
-			<div class="container py-xl-5 py-lg-3">
-				<div class="row">
-					<div class="col-lg-5 w3l-footer-logo">
-						<!-- footer logo -->
-						<a class="navbar-brand" href="index.html"><i class="fas fa-copy"></i> Portfolio</a>
-						<!-- //footer logo -->
-					</div>
-					<!-- button -->
-					<div class="col-lg-5 w3l-footer text-lg-right text-center mt-3">
-						<ul class="list-unstyled footer-nav-wthree">
-							<li class="mr-4">
-								<a href="index.html" class="active">Home</a>
-							</li>
-							<li class="mr-4">
-								<a class="scroll" href="#about">About Me</a>
-							</li>
-							<li class="mr-4">
-								<a class="scroll" href="#services">My Services</a>
-							</li>
-							<li>
-								<a class=" scroll" href="#projects">Projects</a>
-							</li>
-						</ul>
-					</div>
-					<!-- //button -->
-					<div class="col-lg-2 mt-lg-0 mt-3">
-						<div class="button-w3ls mt-0 text-lg-right text-center">
-							<a href="contact.html" class="btn btn-sm animated-button thar-four">Contact Me</a>
-						</div>
-					</div>
-				</div>
-				<div class="row border-top mt-4 pt-lg-4 pt-3 text-lg-left text-center">
-					<!-- copyright -->
-					<p class="col-lg-8 copy-right-grids mt-lg-1">© 2023 All Rights Reserved
-						<span>Design by <a href="#">Muhammad Sarim</a></span>
-					</p>
-					<!-- //copyright -->
-					<!-- social icons -->
-					<div class="col-lg-4 w3social-icons text-lg-right text-center mt-lg-0 mt-3">
-						<ul>
-						
-							<li class="px-2">
-								<a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxTblstmTzHKxSjPsslttVtlHTHDDKLKqtffQwSZwzLWPTwNZTKLRJVLVxTrBvHdhTqcxD" target="_blank" class="rounded-circle">
-									<i class="fab fa-google-plus-g"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/i_sarim_khan/" target="_blank" class="rounded-circle">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/sarimkhan345" target="_blank" class="rounded-circle">
-									<i class="fab fa-facebook"></i>
-								</a>
-							</li>
-							<li><a href="https://www.linkedin.com/in/muhammad-sarim-khan-661211238/" target="_blank" class="rounded-circle"><i
-										class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<!-- //social icons -->
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- //footer -->
+          <div class="qualification__sections">
+            <!--====== Qualification Content 1 ======-->
+            <div
+              class="qualification__content qualifiation__active services__content"
+              data-content
+              id="education"
+            >
+              <!--====== Qualification 1 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">SSC</h3>
+                  <span class="qualification__subtitle"
+                    >S.G.S. <br />School</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    - 2018
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">
+                        Class 10th Summary :
+                      </h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: Biology, Maths, English,
+                            Pak Studies,Chemistry,Physics,Sindi,Urdu,Islamiat.
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Scored A Grades</p>
+                        </li>
+                        <!-- <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Came runners up in inter-school Ball Badminton</p>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
 
-	<!-- Js files -->
-	<!-- JavaScript -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- Default-JavaScript-File -->
+              <!--====== Qualification 2 ======-->
+              <div class="qualification__data">
+                <div></div>
 
-	<!-- scripts required  for particle effect -->
-	<script src='js/particles.min.js'></script>
-	<script src="js/particles.js"></script>
-	<!-- //scripts required for particle effect -->
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Intermediate</h3>
+                  <span class="qualification__subtitle"
+                    >SM Govt.Science<br />College</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    - 2020
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">
+                        Intermediate Summary :
+                      </h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: Physics, Chemistry, Maths,
+                            English, Pak Studies , Urdu.
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Scored B Grades%</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-	<!-- chart -->
-	<script src='js/amcharts.js'></script>
-	<script src='js/chart.js'></script>
-	<!-- //chart -->
-	<!-- //gallery-js -->
+              <!--====== Qualification 3 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Graduation</h3>
+                  <span class="qualification__subtitle"
+                    >Sindh Madressatul Islam University, Karachi</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2025
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">Graduation Summary :</h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>
+                            Studying core subjects of IT including DSA, Embedded
+                            systems, Design analysis and algorithm, Operating
+                            systems, and Computer architecture .
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>Scored an aggregate of 2.8 CGPA till now.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-	<!-- stats -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.countup.js"></script>
-	<script>
-		$('.counter').countUp();
-	</script>
-	<!-- //stats -->
+                
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!--<span class="qualification__line"></span>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<!-- flexSlider (for testimonials) -->
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-	<script defer src="js/jquery.flexslider.js"></script>
-	<script>
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				start: function (slider) {
-					$('body').removeClass('loading');
-				}
-			});
-		});
-	</script>
-	<!-- //flexSlider (for testimonials) -->
+      <!--=================== Portfolio ===================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
 
-	<!-- animation js -->
-	<script src='js/aos.js'></script>
-	<script>
-		AOS.init({
-			easing: 'ease-out-back',
-			duration: 1000
-		});
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- ------------------------portfollio 1-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/1.JPG" class="portfolio__img" />
 
-	</script>
-	<!-- //animation js -->
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Amazon-website
+                </h3>
+                <p class="portfolio__description">
+                  Amazon is a global e-commerce and cloud computing . It revolutionized online shopping with its vast product selection and efficient delivery services, while also leading in cloud services through Amazon Web Services (AWS). The company continually innovates, venturing into various sectors such as artificial intelligence, entertainment, and logistics.
+                </p>
+                <a
+                  href="https://github.com/isarimkhan/amazon-website"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://isarimkhan.github.io/amazon-website/"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ------------------------portfollio 2-------------------- -->
 
-	<!-- smooth scrolling -->
-	<script src="js/SmoothScroll.min.js"></script>
-	<!-- move-top -->
-	<script src="js/move-top.js"></script>
-	<!-- easing -->
-	<script src="js/easing.js"></script>
-	<!--  necessary snippets for few javascript files -->
-	<script src="js/online-resume.js"></script>
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/3.JPG" class="portfolio__img" />
 
-	<script src="js/bootstrap.js"></script>
-	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Apple-Store-Website
+                </h3>
+                <p class="portfolio__description">
+                  The Apple Store website offers a sleek and user-friendly platform for purchasing Apple products, including iPhones, iPads, Macs, and accessories. It features detailed product information, customer reviews, and personalized recommendations. The site also supports secure transactions and provides various services such as trade-ins, financing options, and technical support.
+                </p>
+                <a
+                  href="https://github.com/isarimkhan/apple_website_home_page"
+                  class="button button--flex button--small portfolio__button"target="_blank"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://isarimkhan.github.io/apple_website_home_page/"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
 
-	<!-- gallery -->
-	<script src="js/jquery.chocolat.js"></script>
-	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
-	<!-- light-box -->
-	<script>
-		$(function () {
-			$('.gallery a').Chocolat();
-		});
-	</script>
-	<!-- //light-box -->
-	<!-- //gallery -->
-	<!-- //Js files -->
+            <!-- ------------------------portfollio 3-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/2.JPG" class="portfolio__img" />
 
-</body>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Spotify-Music-Website</h3>
+                <p class="portfolio__description">
+                  Spotify Clone is a web app developed using HTML, CSS, and
+                  JavaScript. It recreates Spotify's interface and features,
+                  allowing users to browse, search, and play songs, create
+                  playlists, and discover new music. Responsive design ensures a
+                  seamless experience on any device. Contributions are welcome!
+                </p>
+                <a
+                  href="https://github.com/isarimkhan/spotify-website"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://isarimkhan.github.io/spotify-website/"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ------------------------portfollio 4-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/4.JPG" class="portfolio__img" />
 
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Pepsi-Homepage</h3>
+                <p class="portfolio__description">
+                  The Pepsi homepage showcases the brand's iconic beverages, promotional campaigns, and community initiatives. It features interactive content, including multimedia elements and social media integrations, to engage users. The site highlights Pepsi's commitment to sustainability and innovation in the beverage industry.
+                </p>
+                <a
+                  href="https://github.com/isarimkhan/pepsi-home-page"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://isarimkhan.github.io/pepsi-home-page/"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ------------------------portfollio 5-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/5.JPG" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">ForSale-Ecommmerce-Website</h3>
+                <p class="portfolio__description">
+                  ForSale is an e-commerce website designed to facilitate seamless buying and selling of products online. It features a user-friendly interface, secure payment gateways, and robust search functionality to enhance the shopping experience. Additionally, ForSale offers sellers tools for inventory management and analytics to optimize their sales performance.
+                </p>
+                <a
+                  href="https://github.com/isarimkhan/For-Sale-E-commerce"
+                  class="button button--flex button--small portfolio__button" target="_blank"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://isarimkhan.github.io/For-Sale-E-commerce/" target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--===================== Contact Me =====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-calling contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Contact Me</h3>
+                <span class="contact__subtitle"
+                  ><a href="tel:6362243314"></a>03190280093</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope-minus contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle"
+                  >Sarimkhankhan218@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Karachi, Pakistan</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <!-- <div class="contact__content">
+                <label for="" class="content__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="content__label">Email</label>
+                <input type="Email" class="contact__input" />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="content__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div> -->
+
+            <div>
+              <a
+                href="https://forms.gle/9DqGeLQGZczWBHFz8"  
+                class="button button--flex"
+              >
+                Send Message
+                <i class="uil uil-message button__icon" ></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--================== Footer ===============-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title"> Muhammad Sarim Khan</h1>
+            <span class="footer__subtitle"
+              >Computer Science Student</span
+            >
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#qualification" class="footer__link">Qualification</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact-Me</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.instagram.com/i_sarim_khan/"
+              class="footer__social"
+              target="__blank"
+            >
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://twitter.com"
+              target="__blank"
+              class="footer__social"
+            >
+            <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169;  Muhammad Sarim Khan. All right reserved</p>
+      </div>
+    </footer>
+
+    <!--================== SCROLL TOP ==================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="assets/ptj.js"></script>
+  </body>
 </html>
